@@ -14,7 +14,8 @@
     <name>demo1</name>
     <description>demo1</description>
     <properties>
-        <java.version>8</java.version>
+        <java.version>9</java.version>
+        <maven.compiler.release> 7 </maven.compiler.release>
     </properties>
     <dependencies>
         <dependency>
@@ -34,6 +35,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+               <release> 7 </release>
+                </configuration>
                 <version>3.11.0</version>
             </plugin>
             <plugin>
